@@ -1,0 +1,32 @@
+module top_level_pwm(
+	input clk,
+			rst_n_a,
+	input [7:0] sw_grados,
+	output reg pwm_pin
+);
+
+wire [31:0] counter_out_wire;
+wire [6:0] wire_unidades, wire_decenas, wire_centenas;
+
+counter #(50_000_000) counter_pwm(
+	.clk(clk),
+	.rst_n_a(rst_n_a),
+	.counter_out(counter_out_wire)
+);
+
+cmp cmp_pwm(
+	.counter_in(counter_out_wire),
+	.sw_input(sw_grados),
+	.pwm_out(pwm_pin)
+);
+
+segmentos_8sw disp(
+	.data_in(sw_grados),
+	.seg_un(wire_unidades),
+	.seg_dec(wire_decenas),
+	.seg_cen(wire_centenas)
+);
+
+
+
+endmodule 

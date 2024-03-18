@@ -1,0 +1,27 @@
+module counter #(parameter counter_max = 1000)(
+	input clk,
+			rst_n_a,
+	output reg [16:0] counter_out;
+);
+// counter auxiliar
+reg [16:0] counter_aux;
+
+always
+always @(posedge clk or negedge rst_n_a)
+begin
+	if(!rst_n_a)
+	begin
+		counter_aux <= 0
+	end
+	else 
+		begin
+			if(counter_aux >= counter_max - 1)
+			begin
+				counter_aux <= 16'd0;
+			end 
+			else
+				counter aux <= counter_aux + 16'd1;
+		end 
+end
+
+endmodule 

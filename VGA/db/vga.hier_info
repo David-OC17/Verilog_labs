@@ -1,0 +1,131 @@
+|vga_wr
+MAX10_CLK1_50 => MAX10_CLK1_50.IN1
+SW[0] => SW[0].IN1
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+VGA_R[0] << vga_top:top.red
+VGA_R[1] << vga_top:top.red
+VGA_R[2] << vga_top:top.red
+VGA_G[0] << vga_top:top.green
+VGA_G[1] << vga_top:top.green
+VGA_G[2] << vga_top:top.green
+VGA_B[0] << vga_top:top.blue
+VGA_B[1] << vga_top:top.blue
+VGA_HS << vga_top:top.hsync
+VGA_VS << vga_top:top.vsync
+
+
+|vga_wr|vga_top:top
+clk => clk.IN1
+clr => clr.IN2
+red[0] <= vga640x480:U3.red
+red[1] <= vga640x480:U3.red
+red[2] <= vga640x480:U3.red
+green[0] <= vga640x480:U3.green
+green[1] <= vga640x480:U3.green
+green[2] <= vga640x480:U3.green
+blue[0] <= vga640x480:U3.blue
+blue[1] <= vga640x480:U3.blue
+hsync <= vga640x480:U3.hsync
+vsync <= vga640x480:U3.vsync
+
+
+|vga_wr|vga_top:top|clockdiv:U1
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+clk => q[5].CLK
+clk => q[6].CLK
+clk => q[7].CLK
+clk => q[8].CLK
+clk => q[9].CLK
+clk => q[10].CLK
+clk => q[11].CLK
+clk => q[12].CLK
+clk => q[13].CLK
+clk => q[14].CLK
+clk => q[15].CLK
+clk => q[16].CLK
+clr => q[0].ACLR
+clr => q[1].ACLR
+clr => q[2].ACLR
+clr => q[3].ACLR
+clr => q[4].ACLR
+clr => q[5].ACLR
+clr => q[6].ACLR
+clr => q[7].ACLR
+clr => q[8].ACLR
+clr => q[9].ACLR
+clr => q[10].ACLR
+clr => q[11].ACLR
+clr => q[12].ACLR
+clr => q[13].ACLR
+clr => q[14].ACLR
+clr => q[15].ACLR
+clr => q[16].ACLR
+dclk <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+segclk <= q[16].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vga_wr|vga_top:top|vga640x480:U3
+dclk => vc[0].CLK
+dclk => vc[1].CLK
+dclk => vc[2].CLK
+dclk => vc[3].CLK
+dclk => vc[4].CLK
+dclk => vc[5].CLK
+dclk => vc[6].CLK
+dclk => vc[7].CLK
+dclk => vc[8].CLK
+dclk => vc[9].CLK
+dclk => hc[0].CLK
+dclk => hc[1].CLK
+dclk => hc[2].CLK
+dclk => hc[3].CLK
+dclk => hc[4].CLK
+dclk => hc[5].CLK
+dclk => hc[6].CLK
+dclk => hc[7].CLK
+dclk => hc[8].CLK
+dclk => hc[9].CLK
+clr => vc[0].ACLR
+clr => vc[1].ACLR
+clr => vc[2].ACLR
+clr => vc[3].ACLR
+clr => vc[4].ACLR
+clr => vc[5].ACLR
+clr => vc[6].ACLR
+clr => vc[7].ACLR
+clr => vc[8].ACLR
+clr => vc[9].ACLR
+clr => hc[0].ACLR
+clr => hc[1].ACLR
+clr => hc[2].ACLR
+clr => hc[3].ACLR
+clr => hc[4].ACLR
+clr => hc[5].ACLR
+clr => hc[6].ACLR
+clr => hc[7].ACLR
+clr => hc[8].ACLR
+clr => hc[9].ACLR
+hsync <= LessThan2.DB_MAX_OUTPUT_PORT_TYPE
+vsync <= LessThan3.DB_MAX_OUTPUT_PORT_TYPE
+red[0] <= red.DB_MAX_OUTPUT_PORT_TYPE
+red[1] <= red.DB_MAX_OUTPUT_PORT_TYPE
+red[2] <= red.DB_MAX_OUTPUT_PORT_TYPE
+green[0] <= green.DB_MAX_OUTPUT_PORT_TYPE
+green[1] <= green.DB_MAX_OUTPUT_PORT_TYPE
+green[2] <= green.DB_MAX_OUTPUT_PORT_TYPE
+blue[0] <= blue.DB_MAX_OUTPUT_PORT_TYPE
+blue[1] <= blue.DB_MAX_OUTPUT_PORT_TYPE
+
+

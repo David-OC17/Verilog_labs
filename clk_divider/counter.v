@@ -1,0 +1,18 @@
+
+module counter(
+  input            clk,  
+  input            rst_n, // Active-low reset
+  output reg [7:0] count_counter
+);
+
+always @ (posedge clk or negedge rst_n) begin
+  if (~rst_n) begin
+    count_counter <= 8'b0;
+  end
+  else begin
+    count_counter <= count_counter + 1;
+  end
+end
+
+
+endmodule

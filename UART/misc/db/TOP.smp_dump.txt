@@ -1,0 +1,10 @@
+
+State Machine - |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|State
+Name State.READ 
+State.IDLE 0 
+State.READ 1 
+
+State Machine - |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX|State
+Name State.READ 
+State.IDLE 0 
+State.READ 1 

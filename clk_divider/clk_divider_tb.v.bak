@@ -1,0 +1,3 @@
+// clk_divider testbench
+
+module clk_divider_tb();

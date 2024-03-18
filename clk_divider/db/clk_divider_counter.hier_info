@@ -1,0 +1,215 @@
+|top_wrapper
+MAX10_CLK1_50 => MAX10_CLK1_50.IN1
+KEY[0] => ~NO_FANOUT~
+KEY[1] => KEY[1].IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= seq_example_with_clk_divider:WRAPPER.LED_CLK
+HEX0[0] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX0[1] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX0[2] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX0[3] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX0[4] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX0[5] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX0[6] <= segmentos_7:UNIDADES.data_segmentos_out
+HEX1[0] <= segmentos_7:DECENAS.data_segmentos_out
+HEX1[1] <= segmentos_7:DECENAS.data_segmentos_out
+HEX1[2] <= segmentos_7:DECENAS.data_segmentos_out
+HEX1[3] <= segmentos_7:DECENAS.data_segmentos_out
+HEX1[4] <= segmentos_7:DECENAS.data_segmentos_out
+HEX1[5] <= segmentos_7:DECENAS.data_segmentos_out
+HEX1[6] <= segmentos_7:DECENAS.data_segmentos_out
+HEX2[0] <= segmentos_7:CENTENAS.data_segmentos_out
+HEX2[1] <= segmentos_7:CENTENAS.data_segmentos_out
+HEX2[2] <= segmentos_7:CENTENAS.data_segmentos_out
+HEX2[3] <= segmentos_7:CENTENAS.data_segmentos_out
+HEX2[4] <= segmentos_7:CENTENAS.data_segmentos_out
+HEX2[5] <= segmentos_7:CENTENAS.data_segmentos_out
+HEX2[6] <= segmentos_7:CENTENAS.data_segmentos_out
+
+
+|top_wrapper|seq_example_with_clk_divider:WRAPPER
+clk => clk.IN1
+rst_n_a => rst_n_a.IN2
+up_down_switch => up_down_switch.IN1
+enable => enable.IN1
+counter_data[0] <= contador_updown:COUNTER.counter_num
+counter_data[1] <= contador_updown:COUNTER.counter_num
+counter_data[2] <= contador_updown:COUNTER.counter_num
+counter_data[3] <= contador_updown:COUNTER.counter_num
+counter_data[4] <= contador_updown:COUNTER.counter_num
+counter_data[5] <= contador_updown:COUNTER.counter_num
+counter_data[6] <= contador_updown:COUNTER.counter_num
+counter_data[7] <= contador_updown:COUNTER.counter_num
+LED_CLK <= clk_div_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_wrapper|seq_example_with_clk_divider:WRAPPER|clk_divider:DIVISOR_RELOJ
+clk => clk_div~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => count[8].ACLR
+rst => count[9].ACLR
+rst => count[10].ACLR
+rst => count[11].ACLR
+rst => count[12].ACLR
+rst => count[13].ACLR
+rst => count[14].ACLR
+rst => count[15].ACLR
+rst => count[16].ACLR
+rst => count[17].ACLR
+rst => count[18].ACLR
+rst => count[19].ACLR
+rst => count[20].ACLR
+rst => count[21].ACLR
+rst => count[22].ACLR
+rst => count[23].ACLR
+rst => count[24].ACLR
+rst => count[25].ACLR
+rst => count[26].ACLR
+rst => count[27].ACLR
+rst => count[28].ACLR
+rst => count[29].ACLR
+rst => count[30].ACLR
+rst => count[31].ACLR
+rst => clk_div~reg0.ACLR
+clk_div <= clk_div~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_wrapper|seq_example_with_clk_divider:WRAPPER|contador_updown:COUNTER
+clk => counter_num[0]~reg0.CLK
+clk => counter_num[1]~reg0.CLK
+clk => counter_num[2]~reg0.CLK
+clk => counter_num[3]~reg0.CLK
+clk => counter_num[4]~reg0.CLK
+rst_n_a => counter_num[0]~reg0.ACLR
+rst_n_a => counter_num[1]~reg0.ACLR
+rst_n_a => counter_num[2]~reg0.ACLR
+rst_n_a => counter_num[3]~reg0.ACLR
+rst_n_a => counter_num[4]~reg0.ACLR
+up_down => counter_num.OUTPUTSELECT
+up_down => counter_num.OUTPUTSELECT
+up_down => counter_num.OUTPUTSELECT
+up_down => counter_num.OUTPUTSELECT
+up_down => counter_num.OUTPUTSELECT
+enable => counter_num[0]~reg0.ENA
+enable => counter_num[4]~reg0.ENA
+enable => counter_num[3]~reg0.ENA
+enable => counter_num[2]~reg0.ENA
+enable => counter_num[1]~reg0.ENA
+counter_num[0] <= counter_num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_num[1] <= counter_num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_num[2] <= counter_num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_num[3] <= counter_num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_num[4] <= counter_num[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_wrapper|segmentos_7:UNIDADES
+data_segmentos_in[0] => Decoder0.IN7
+data_segmentos_in[1] => Decoder0.IN6
+data_segmentos_in[2] => Decoder0.IN5
+data_segmentos_in[3] => Decoder0.IN4
+data_segmentos_in[4] => Decoder0.IN3
+data_segmentos_in[5] => Decoder0.IN2
+data_segmentos_in[6] => Decoder0.IN1
+data_segmentos_in[7] => Decoder0.IN0
+data_segmentos_out[0] <= data_segmentos_out.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_wrapper|segmentos_7:DECENAS
+data_segmentos_in[0] => Decoder0.IN7
+data_segmentos_in[1] => Decoder0.IN6
+data_segmentos_in[2] => Decoder0.IN5
+data_segmentos_in[3] => Decoder0.IN4
+data_segmentos_in[4] => Decoder0.IN3
+data_segmentos_in[5] => Decoder0.IN2
+data_segmentos_in[6] => Decoder0.IN1
+data_segmentos_in[7] => Decoder0.IN0
+data_segmentos_out[0] <= data_segmentos_out.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_wrapper|segmentos_7:CENTENAS
+data_segmentos_in[0] => Decoder0.IN7
+data_segmentos_in[1] => Decoder0.IN6
+data_segmentos_in[2] => Decoder0.IN5
+data_segmentos_in[3] => Decoder0.IN4
+data_segmentos_in[4] => Decoder0.IN3
+data_segmentos_in[5] => Decoder0.IN2
+data_segmentos_in[6] => Decoder0.IN1
+data_segmentos_in[7] => Decoder0.IN0
+data_segmentos_out[0] <= data_segmentos_out.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

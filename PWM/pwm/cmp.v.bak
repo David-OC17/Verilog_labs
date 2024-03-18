@@ -1,0 +1,11 @@
+module cmp(
+	input [31:0] counter_in,
+	input [7:0] sw_input,
+	output pwm_out
+	
+	
+);
+
+assign wire [31:0] comp = (5000 * sw_input) / 180 + 50_000; 
+
+endmodule 

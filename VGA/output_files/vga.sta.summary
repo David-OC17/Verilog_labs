@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'vga_top:top|clockdiv:U1|q[0]'
+Slack : -1.634
+TNS   : -31.170
+
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -0.773
+TNS   : -0.773
+
+Type  : Slow 1200mV 85C Model Hold 'vga_top:top|clockdiv:U1|q[0]'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.698
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_top:top|clockdiv:U1|q[0]'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 0C Model Setup 'vga_top:top|clockdiv:U1|q[0]'
+Slack : -1.414
+TNS   : -26.970
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -0.649
+TNS   : -0.649
+
+Type  : Slow 1200mV 0C Model Hold 'vga_top:top|clockdiv:U1|q[0]'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_top:top|clockdiv:U1|q[0]'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -0.112
+TNS   : -0.112
+
+Type  : Fast 1200mV 0C Model Setup 'vga_top:top|clockdiv:U1|q[0]'
+Slack : -0.082
+TNS   : -0.940
+
+Type  : Fast 1200mV 0C Model Hold 'vga_top:top|clockdiv:U1|q[0]'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.326
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -4.157
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_top:top|clockdiv:U1|q[0]'
+Slack : -1.000
+TNS   : -20.000
+
+------------------------------------------------------------
