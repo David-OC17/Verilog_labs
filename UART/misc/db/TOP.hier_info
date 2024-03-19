@@ -1,4 +1,4 @@
-|two_boards_DE10_Lite_wr
+|DE10_Lite_wr
 MAX10_CLK1_50 => MAX10_CLK1_50.IN2
 SW[0] => Mod3.IN11
 SW[0] => Div2.IN11
@@ -43,16 +43,6 @@ SW[9] => data_transmit.OUTPUTSELECT
 SW[9] => data_transmit.OUTPUTSELECT
 KEY[0] => KEY[0].IN2
 KEY[1] => ~NO_FANOUT~
-ARDUINO_IO[0] <> TOP:BOARD1.Tx
-ARDUINO_IO[1] <> TOP:BOARD2.Rx
-ARDUINO_IO[2] <> <UNC>
-ARDUINO_IO[3] <> <UNC>
-ARDUINO_IO[4] <> <UNC>
-ARDUINO_IO[5] <> <UNC>
-ARDUINO_IO[6] <> <UNC>
-ARDUINO_IO[7] <> <UNC>
-ARDUINO_IO[8] <> <UNC>
-ARDUINO_IO[9] <> <UNC>
 LEDR[0] << <GND>
 LEDR[1] << <GND>
 LEDR[2] << <GND>
@@ -107,7 +97,7 @@ HEX5[5] << segmentos_7:TRANSMITER_DISPLAY3.data_segmentos_out
 HEX5[6] << segmentos_7:TRANSMITER_DISPLAY3.data_segmentos_out
 
 
-|two_boards_DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY1
+|DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY1
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -125,7 +115,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|two_boards_DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY2
+|DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY2
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -143,7 +133,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|two_boards_DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY3
+|DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY3
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -161,7 +151,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|two_boards_DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY1
+|DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY1
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -179,7 +169,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|two_boards_DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY2
+|DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY2
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -197,7 +187,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|two_boards_DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY3
+|DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY3
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -215,7 +205,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD1
+|DE10_Lite_wr|TOP:BOARD1
 Clk => Clk.IN3
 Rst_n => Rst_n.IN3
 Rx => Rx.IN1
@@ -238,7 +228,7 @@ TxData[6] => TxData[6].IN1
 TxData[7] => TxData[7].IN1
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX
+|DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX
 Clk => RxData[0]~reg0.CLK
 Clk => RxData[1]~reg0.CLK
 Clk => RxData[2]~reg0.CLK
@@ -303,7 +293,7 @@ NBits[3] => Equal4.IN3
 NBits[3] => Equal5.IN2
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX
+|DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX
 Clk => R_edge[0].CLK
 Clk => R_edge[1].CLK
 Clk => State.CLK
@@ -348,7 +338,7 @@ NBits[2] => Add2.IN6
 NBits[3] => Add2.IN5
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD1|UART_BaudRate_generator:I_BAUDGEN
+|DE10_Lite_wr|TOP:BOARD1|UART_BaudRate_generator:I_BAUDGEN
 Clk => baudRateReg[0].CLK
 Clk => baudRateReg[1].CLK
 Clk => baudRateReg[2].CLK
@@ -400,7 +390,7 @@ BaudRate[14] => Equal0.IN1
 BaudRate[15] => Equal0.IN0
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD2
+|DE10_Lite_wr|TOP:BOARD2
 Clk => Clk.IN3
 Rst_n => Rst_n.IN3
 Rx => Rx.IN1
@@ -423,7 +413,7 @@ TxData[6] => TxData[6].IN1
 TxData[7] => TxData[7].IN1
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX
+|DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX
 Clk => RxData[0]~reg0.CLK
 Clk => RxData[1]~reg0.CLK
 Clk => RxData[2]~reg0.CLK
@@ -488,7 +478,7 @@ NBits[3] => Equal4.IN3
 NBits[3] => Equal5.IN2
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_tx:I_RS232TX
+|DE10_Lite_wr|TOP:BOARD2|UART_rs232_tx:I_RS232TX
 Clk => R_edge[0].CLK
 Clk => R_edge[1].CLK
 Clk => State.CLK
@@ -533,7 +523,7 @@ NBits[2] => Add2.IN6
 NBits[3] => Add2.IN5
 
 
-|two_boards_DE10_Lite_wr|TOP:BOARD2|UART_BaudRate_generator:I_BAUDGEN
+|DE10_Lite_wr|TOP:BOARD2|UART_BaudRate_generator:I_BAUDGEN
 Clk => baudRateReg[0].CLK
 Clk => baudRateReg[1].CLK
 Clk => baudRateReg[2].CLK

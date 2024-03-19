@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/simulation/modelsim
+vsegmentos_7
+!s110 1710829509
+!i10b 1
+!s100 SV^;GzI_bNFP6<n>kbaOa3
+Ig:RTDAj^>KKLLSKI1Bo;F0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1709321843
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v
+L0 2
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1710829509.000000
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display
+Z5 tCvgOpt 0
+vsegmentos_7_tb
+!s110 1710829510
+!i10b 1
+!s100 V:?hdIa07jcoNHLWDB6_[1
+IZCM2@?>AWUz2ENbNjdH`E3
+R1
+R0
+w1710829466
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7_tb.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7_tb.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1710829510.000000
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7_tb.v|
+!i113 1
+R3
+R4
+R5

@@ -1,5 +1,5 @@
 Flow report for pwm_ex
-Mon Mar 11 14:30:36 2024
+Tue Mar 19 01:13:49 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,24 +40,24 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 11 14:30:36 2024       ;
+; Flow Status                        ; Successful - Tue Mar 19 01:13:49 2024       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; pwm_ex                                      ;
-; Top-level Entity Name              ; top_level_pwm_wr                            ;
+; Top-level Entity Name              ; pwm_tb                                      ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 302 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 302 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 32 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 32                                          ;
-; Total pins                         ; 42 / 360 ( 12 % )                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,72 +66,66 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/11/2024 14:30:01 ;
+; Start date & time ; 03/19/2024 01:13:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pwm_ex              ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                    ;
-+-------------------------------------+----------------------------------------+---------------+------------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name      ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 118902019527087.171018900013000        ; --            ; --               ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --               ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --               ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --               ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --               ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --               ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --               ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --               ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --               ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --               ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; top_level_pwm_wr ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; top_level_pwm_wr ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; top_level_pwm_wr ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --               ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --               ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --               ; --                                ;
-; TOP_LEVEL_ENTITY                    ; top_level_pwm_wr                       ; pwm_ex        ; --               ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+------------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 118902019527087.171083242123128        ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; pwm_tb                            ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; pwm_tb                                 ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; pwm_tb.v                               ; --            ; --          ; pwm_tb                            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; pwm_tb                                 ; --            ; --          ; pwm_tb                            ;
+; EDA_TEST_BENCH_NAME                  ; pwm_tb                                 ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; pwm_tb      ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; pwm_tb      ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; pwm_tb      ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; pwm_tb                                 ; pwm_ex        ; --          ; --                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4854 MB             ; 00:00:10                           ;
-; Fitter               ; 00:00:11     ; 1.2                     ; 6611 MB             ; 00:00:09                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4685 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.3                     ; 4965 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:01                           ;
-; Total                ; 00:00:32     ; --                      ; --                  ; 00:00:24                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4713 MB             ; 00:00:09                           ;
+; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DavidLegion      ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DavidLegion      ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DavidLegion      ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DavidLegion      ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DavidLegion      ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DavidLegion      ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off pwm_ex -c pwm_ex
-quartus_fit --read_settings_files=off --write_settings_files=off pwm_ex -c pwm_ex
-quartus_asm --read_settings_files=off --write_settings_files=off pwm_ex -c pwm_ex
-quartus_sta pwm_ex -c pwm_ex
-quartus_eda --read_settings_files=off --write_settings_files=off pwm_ex -c pwm_ex
+quartus_map --read_settings_files=on --write_settings_files=off pwm_ex -c pwm_ex --analysis_and_elaboration
 
 
 

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY top_wrapper
+set_global_assignment -name TOP_LEVEL_ENTITY clk_divider_tb
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:55:56  FEBRUARY 22, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -242,6 +242,14 @@ set_global_assignment -name EDA_TEST_BENCH_NAME clk_divider_tb -section_id eda_s
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id clk_divider_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME clk_divider_tb -section_id clk_divider_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE clk_divider_tb.v -section_id clk_divider_tb
+set_global_assignment -name VERILOG_FILE clk_divider_tb.v
+set_global_assignment -name VERILOG_FILE ../7segment_display/segmentos_7.v
+set_global_assignment -name VERILOG_FILE counter.v
+set_global_assignment -name VERILOG_FILE clk_divider.v
+set_global_assignment -name TCL_SCRIPT_FILE ../../../../../../Downloads/pin_assigment.tcl
+set_global_assignment -name VERILOG_FILE clk_divider_counter.v
+set_global_assignment -name VERILOG_FILE top_wrapper.v
+set_global_assignment -name VERILOG_FILE output_files/contador_updown.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -430,11 +438,4 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
-set_global_assignment -name VERILOG_FILE counter.v
-set_global_assignment -name VERILOG_FILE ../segmentos_7/segmentos_7.v
-set_global_assignment -name VERILOG_FILE clk_divider.v
-set_global_assignment -name TCL_SCRIPT_FILE ../../../../../../Downloads/pin_assigment.tcl
-set_global_assignment -name VERILOG_FILE clk_divider_counter.v
-set_global_assignment -name VERILOG_FILE top_wrapper.v
-set_global_assignment -name VERILOG_FILE output_files/contador_updown.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

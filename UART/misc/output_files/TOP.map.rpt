@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TOP
-Wed Mar 13 16:54:51 2024
+Tue Mar 19 01:50:23 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -13,8 +13,8 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|State
-  9. State Machine - |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX|State
+  8. State Machine - |DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|State
+  9. State Machine - |DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX|State
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Inverted Register Statistics
@@ -73,16 +73,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 13 16:54:51 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 19 01:50:23 2024       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; TOP                                         ;
-; Top-level Entity Name              ; two_boards_DE10_Lite_wr                     ;
+; Top-level Entity Name              ; DE10_Lite_wr                                ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; 493                                         ;
 ;     Total combinational functions  ; 475                                         ;
 ;     Dedicated logic registers      ; 92                                          ;
 ; Total registers                    ; 92                                          ;
-; Total pins                         ; 75                                          ;
+; Total pins                         ; 65                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -92,90 +92,90 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                   ;
-+------------------------------------------------------------------+-------------------------+--------------------+
-; Option                                                           ; Setting                 ; Default Value      ;
-+------------------------------------------------------------------+-------------------------+--------------------+
-; Device                                                           ; 10M50DAF484C7G          ;                    ;
-; Top-level entity name                                            ; two_boards_DE10_Lite_wr ; TOP                ;
-; Family name                                                      ; MAX 10                  ; Cyclone V          ;
-; Use smart compilation                                            ; Off                     ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                      ; On                 ;
-; Enable compact report table                                      ; Off                     ; Off                ;
-; Restructure Multiplexers                                         ; Auto                    ; Auto               ;
-; Create Debugging Nodes for IP Cores                              ; Off                     ; Off                ;
-; Preserve fewer node names                                        ; On                      ; On                 ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable                  ; Enable             ;
-; Verilog Version                                                  ; Verilog_2001            ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993               ; VHDL_1993          ;
-; State Machine Processing                                         ; Auto                    ; Auto               ;
-; Safe State Machine                                               ; Off                     ; Off                ;
-; Extract Verilog State Machines                                   ; On                      ; On                 ;
-; Extract VHDL State Machines                                      ; On                      ; On                 ;
-; Ignore Verilog initial constructs                                ; Off                     ; Off                ;
-; Iteration limit for constant Verilog loops                       ; 5000                    ; 5000               ;
-; Iteration limit for non-constant Verilog loops                   ; 250                     ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                      ; On                 ;
-; Infer RAMs from Raw Logic                                        ; On                      ; On                 ;
-; Parallel Synthesis                                               ; On                      ; On                 ;
-; DSP Block Balancing                                              ; Auto                    ; Auto               ;
-; NOT Gate Push-Back                                               ; On                      ; On                 ;
-; Power-Up Don't Care                                              ; On                      ; On                 ;
-; Remove Redundant Logic Cells                                     ; Off                     ; Off                ;
-; Remove Duplicate Registers                                       ; On                      ; On                 ;
-; Ignore CARRY Buffers                                             ; Off                     ; Off                ;
-; Ignore CASCADE Buffers                                           ; Off                     ; Off                ;
-; Ignore GLOBAL Buffers                                            ; Off                     ; Off                ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                     ; Off                ;
-; Ignore LCELL Buffers                                             ; Off                     ; Off                ;
-; Ignore SOFT Buffers                                              ; On                      ; On                 ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                     ; Off                ;
-; Optimization Technique                                           ; Balanced                ; Balanced           ;
-; Carry Chain Length                                               ; 70                      ; 70                 ;
-; Auto Carry Chains                                                ; On                      ; On                 ;
-; Auto Open-Drain Pins                                             ; On                      ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                     ; Off                ;
-; Auto ROM Replacement                                             ; On                      ; On                 ;
-; Auto RAM Replacement                                             ; On                      ; On                 ;
-; Auto DSP Block Replacement                                       ; On                      ; On                 ;
-; Auto Shift Register Replacement                                  ; Auto                    ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto                    ; Auto               ;
-; Auto Clock Enable Replacement                                    ; On                      ; On                 ;
-; Strict RAM Replacement                                           ; Off                     ; Off                ;
-; Allow Synchronous Control Signals                                ; On                      ; On                 ;
-; Force Use of Synchronous Clear Signals                           ; Off                     ; Off                ;
-; Auto RAM Block Balancing                                         ; On                      ; On                 ;
-; Auto RAM to Logic Cell Conversion                                ; Off                     ; Off                ;
-; Auto Resource Sharing                                            ; Off                     ; Off                ;
-; Allow Any RAM Size For Recognition                               ; Off                     ; Off                ;
-; Allow Any ROM Size For Recognition                               ; Off                     ; Off                ;
-; Allow Any Shift Register Size For Recognition                    ; Off                     ; Off                ;
-; Use LogicLock Constraints during Resource Balancing              ; On                      ; On                 ;
-; Ignore translate_off and synthesis_off directives                ; Off                     ; Off                ;
-; Timing-Driven Synthesis                                          ; On                      ; On                 ;
-; Report Parameter Settings                                        ; On                      ; On                 ;
-; Report Source Assignments                                        ; On                      ; On                 ;
-; Report Connectivity Checks                                       ; On                      ; On                 ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                     ; Off                ;
-; Synchronization Register Chain Length                            ; 2                       ; 2                  ;
-; Power Optimization During Synthesis                              ; Normal compilation      ; Normal compilation ;
-; HDL message level                                                ; Level2                  ; Level2             ;
-; Suppress Register Optimization Related Messages                  ; Off                     ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000                    ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000                    ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                     ; 100                ;
-; Clock MUX Protection                                             ; On                      ; On                 ;
-; Auto Gated Clock Conversion                                      ; Off                     ; Off                ;
-; Block Design Naming                                              ; Auto                    ; Auto               ;
-; SDC constraint protection                                        ; Off                     ; Off                ;
-; Synthesis Effort                                                 ; Auto                    ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                      ; On                 ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                     ; Off                ;
-; Analysis & Synthesis Message Level                               ; Medium                  ; Medium             ;
-; Disable Register Merging Across Hierarchies                      ; Auto                    ; Auto               ;
-; Resource Aware Inference For Block RAM                           ; On                      ; On                 ;
-+------------------------------------------------------------------+-------------------------+--------------------+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; DE10_Lite_wr       ; TOP                ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -196,32 +196,32 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; ../../segmentos_7/segmentos_7.v  ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/segmentos_7/segmentos_7.v                ;         ;
-; ../src/UART_tx.v                 ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_tx.v                   ;         ;
-; ../src/UART_rx.v                 ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_rx.v                   ;         ;
-; ../src/UART_baudrate_generator.v ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_baudrate_generator.v   ;         ;
-; ../src/TOP.v                     ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/TOP.v                       ;         ;
-; ../src/two_boards_DE10_Lite_wr.v ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v   ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf                                          ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc                                         ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc                                     ;         ;
-; aglobal180.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc                                          ;         ;
-; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_ckl.tdf      ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/sign_div_unsign_bkh.tdf ;         ;
-; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_0fe.tdf       ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/add_sub_t3c.tdf         ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/add_sub_u3c.tdf         ;         ;
-; db/lpm_divide_9sl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_9sl.tdf      ;         ;
-; db/lpm_divide_csl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_csl.tdf      ;         ;
-; db/sign_div_unsign_ekh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/sign_div_unsign_ekh.tdf ;         ;
-; db/alt_u_div_6fe.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_6fe.tdf       ;         ;
-; db/lpm_divide_fkl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_fkl.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++--------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                              ; Library ;
++--------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; ../../7segment_display/segmentos_7.v ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v       ;         ;
+; ../src/UART_tx.v                     ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v                   ;         ;
+; ../src/UART_rx.v                     ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v                   ;         ;
+; ../src/UART_baudrate_generator.v     ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_baudrate_generator.v   ;         ;
+; ../src/TOP.v                         ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v                       ;         ;
+; ../src/DE10_Lite_wr.v                ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v              ;         ;
+; lpm_divide.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf                                     ;         ;
+; abs_divider.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc                                    ;         ;
+; sign_div_unsign.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc                                ;         ;
+; aglobal180.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc                                     ;         ;
+; db/lpm_divide_ckl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_ckl.tdf      ;         ;
+; db/sign_div_unsign_bkh.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/sign_div_unsign_bkh.tdf ;         ;
+; db/alt_u_div_0fe.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_0fe.tdf       ;         ;
+; db/add_sub_t3c.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/add_sub_u3c.tdf         ;         ;
+; db/lpm_divide_9sl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_9sl.tdf      ;         ;
+; db/lpm_divide_csl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_csl.tdf      ;         ;
+; db/sign_div_unsign_ekh.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/sign_div_unsign_ekh.tdf ;         ;
+; db/alt_u_div_6fe.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_6fe.tdf       ;         ;
+; db/lpm_divide_fkl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_fkl.tdf      ;         ;
++--------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -245,91 +245,91 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 92                  ;
 ;     -- I/O registers                        ; 0                   ;
 ;                                             ;                     ;
-; I/O pins                                    ; 75                  ;
+; I/O pins                                    ; 65                  ;
 ;                                             ;                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; MAX10_CLK1_50~input ;
 ; Maximum fan-out                             ; 52                  ;
-; Total fan-out                               ; 1625                ;
-; Average fan-out                             ; 2.24                ;
+; Total fan-out                               ; 1604                ;
+; Average fan-out                             ; 2.30                ;
 +---------------------------------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                      ; Entity Name             ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |two_boards_DE10_Lite_wr                  ; 475 (9)             ; 92 (8)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 75   ; 0            ; 0          ; |two_boards_DE10_Lite_wr                                                                                                 ; two_boards_DE10_Lite_wr ; work         ;
-;    |TOP:BOARD1|                           ; 59 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|TOP:BOARD1                                                                                      ; TOP                     ; work         ;
-;       |UART_BaudRate_generator:I_BAUDGEN| ; 21 (21)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_BaudRate_generator:I_BAUDGEN                                                    ; UART_BaudRate_generator ; work         ;
-;       |UART_rs232_tx:I_RS232TX|           ; 38 (38)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX                                                              ; UART_rs232_tx           ; work         ;
-;    |TOP:BOARD2|                           ; 45 (0)              ; 44 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|TOP:BOARD2                                                                                      ; TOP                     ; work         ;
-;       |UART_BaudRate_generator:I_BAUDGEN| ; 21 (21)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_BaudRate_generator:I_BAUDGEN                                                    ; UART_BaudRate_generator ; work         ;
-;       |UART_rs232_rx:I_RS232RX|           ; 24 (24)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX                                                              ; UART_rs232_rx           ; work         ;
-;    |lpm_divide:Div0|                      ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div0                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_9sl:auto_generated|     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl          ; work         ;
-;          |sign_div_unsign_bkh:divider|    ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;             |alt_u_div_0fe:divider|       ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
-;    |lpm_divide:Div1|                      ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div1                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_csl:auto_generated|     ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div1|lpm_divide_csl:auto_generated                                                   ; lpm_divide_csl          ; work         ;
-;          |sign_div_unsign_ekh:divider|    ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div1|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh     ; work         ;
-;             |alt_u_div_6fe:divider|       ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div1|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_6fe:divider ; alt_u_div_6fe           ; work         ;
-;    |lpm_divide:Div2|                      ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div2                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_9sl:auto_generated|     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div2|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl          ; work         ;
-;          |sign_div_unsign_bkh:divider|    ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div2|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;             |alt_u_div_0fe:divider|       ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div2|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
-;    |lpm_divide:Div3|                      ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div3                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_csl:auto_generated|     ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div3|lpm_divide_csl:auto_generated                                                   ; lpm_divide_csl          ; work         ;
-;          |sign_div_unsign_ekh:divider|    ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div3|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh     ; work         ;
-;             |alt_u_div_6fe:divider|       ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Div3|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_6fe:divider ; alt_u_div_6fe           ; work         ;
-;    |lpm_divide:Mod0|                      ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod0                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_ckl:auto_generated|     ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
-;          |sign_div_unsign_bkh:divider|    ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;             |alt_u_div_0fe:divider|       ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
-;    |lpm_divide:Mod1|                      ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod1                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_ckl:auto_generated|     ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod1|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
-;          |sign_div_unsign_bkh:divider|    ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;             |alt_u_div_0fe:divider|       ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
-;    |lpm_divide:Mod3|                      ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod3                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_ckl:auto_generated|     ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod3|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
-;          |sign_div_unsign_bkh:divider|    ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;             |alt_u_div_0fe:divider|       ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
-;    |lpm_divide:Mod4|                      ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod4                                                                                 ; lpm_divide              ; work         ;
-;       |lpm_divide_ckl:auto_generated|     ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod4|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
-;          |sign_div_unsign_bkh:divider|    ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
-;             |alt_u_div_0fe:divider|       ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
-;    |segmentos_7:RECEIVER_DISPLAY1|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY1                                                                   ; segmentos_7             ; work         ;
-;    |segmentos_7:RECEIVER_DISPLAY2|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY2                                                                   ; segmentos_7             ; work         ;
-;    |segmentos_7:RECEIVER_DISPLAY3|        ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY3                                                                   ; segmentos_7             ; work         ;
-;    |segmentos_7:TRANSMITER_DISPLAY1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY1                                                                 ; segmentos_7             ; work         ;
-;    |segmentos_7:TRANSMITER_DISPLAY2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY2                                                                 ; segmentos_7             ; work         ;
-;    |segmentos_7:TRANSMITER_DISPLAY3|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |two_boards_DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY3                                                                 ; segmentos_7             ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                     ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                           ; Entity Name             ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; |DE10_Lite_wr                             ; 475 (9)             ; 92 (8)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 65   ; 0            ; 0          ; |DE10_Lite_wr                                                                                                 ; DE10_Lite_wr            ; work         ;
+;    |TOP:BOARD1|                           ; 59 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|TOP:BOARD1                                                                                      ; TOP                     ; work         ;
+;       |UART_BaudRate_generator:I_BAUDGEN| ; 21 (21)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|TOP:BOARD1|UART_BaudRate_generator:I_BAUDGEN                                                    ; UART_BaudRate_generator ; work         ;
+;       |UART_rs232_tx:I_RS232TX|           ; 38 (38)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX                                                              ; UART_rs232_tx           ; work         ;
+;    |TOP:BOARD2|                           ; 45 (0)              ; 44 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|TOP:BOARD2                                                                                      ; TOP                     ; work         ;
+;       |UART_BaudRate_generator:I_BAUDGEN| ; 21 (21)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|TOP:BOARD2|UART_BaudRate_generator:I_BAUDGEN                                                    ; UART_BaudRate_generator ; work         ;
+;       |UART_rs232_rx:I_RS232RX|           ; 24 (24)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX                                                              ; UART_rs232_rx           ; work         ;
+;    |lpm_divide:Div0|                      ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div0                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_9sl:auto_generated|     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl          ; work         ;
+;          |sign_div_unsign_bkh:divider|    ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;             |alt_u_div_0fe:divider|       ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
+;    |lpm_divide:Div1|                      ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div1                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_csl:auto_generated|     ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div1|lpm_divide_csl:auto_generated                                                   ; lpm_divide_csl          ; work         ;
+;          |sign_div_unsign_ekh:divider|    ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div1|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh     ; work         ;
+;             |alt_u_div_6fe:divider|       ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div1|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_6fe:divider ; alt_u_div_6fe           ; work         ;
+;    |lpm_divide:Div2|                      ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div2                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_9sl:auto_generated|     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div2|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl          ; work         ;
+;          |sign_div_unsign_bkh:divider|    ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div2|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;             |alt_u_div_0fe:divider|       ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div2|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
+;    |lpm_divide:Div3|                      ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div3                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_csl:auto_generated|     ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div3|lpm_divide_csl:auto_generated                                                   ; lpm_divide_csl          ; work         ;
+;          |sign_div_unsign_ekh:divider|    ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div3|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider                       ; sign_div_unsign_ekh     ; work         ;
+;             |alt_u_div_6fe:divider|       ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Div3|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_6fe:divider ; alt_u_div_6fe           ; work         ;
+;    |lpm_divide:Mod0|                      ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod0                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_ckl:auto_generated|     ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
+;          |sign_div_unsign_bkh:divider|    ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;             |alt_u_div_0fe:divider|       ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
+;    |lpm_divide:Mod1|                      ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod1                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_ckl:auto_generated|     ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod1|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
+;          |sign_div_unsign_bkh:divider|    ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;             |alt_u_div_0fe:divider|       ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
+;    |lpm_divide:Mod3|                      ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod3                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_ckl:auto_generated|     ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod3|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
+;          |sign_div_unsign_bkh:divider|    ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;             |alt_u_div_0fe:divider|       ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod3|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
+;    |lpm_divide:Mod4|                      ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod4                                                                                 ; lpm_divide              ; work         ;
+;       |lpm_divide_ckl:auto_generated|     ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod4|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl          ; work         ;
+;          |sign_div_unsign_bkh:divider|    ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh     ; work         ;
+;             |alt_u_div_0fe:divider|       ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe           ; work         ;
+;    |segmentos_7:RECEIVER_DISPLAY1|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY1                                                                   ; segmentos_7             ; work         ;
+;    |segmentos_7:RECEIVER_DISPLAY2|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY2                                                                   ; segmentos_7             ; work         ;
+;    |segmentos_7:RECEIVER_DISPLAY3|        ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|segmentos_7:RECEIVER_DISPLAY3                                                                   ; segmentos_7             ; work         ;
+;    |segmentos_7:TRANSMITER_DISPLAY1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY1                                                                 ; segmentos_7             ; work         ;
+;    |segmentos_7:TRANSMITER_DISPLAY2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY2                                                                 ; segmentos_7             ; work         ;
+;    |segmentos_7:TRANSMITER_DISPLAY3|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_Lite_wr|segmentos_7:TRANSMITER_DISPLAY3                                                                 ; segmentos_7             ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|State ;
-+------------+----------------------------------------------------------------------+
-; Name       ; State.READ                                                           ;
-+------------+----------------------------------------------------------------------+
-; State.IDLE ; 0                                                                    ;
-; State.READ ; 1                                                                    ;
-+------------+----------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; State Machine - |DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|State ;
++------------+-----------------------------------------------------------+
+; Name       ; State.READ                                                ;
++------------+-----------------------------------------------------------+
+; State.IDLE ; 0                                                         ;
+; State.READ ; 1                                                         ;
++------------+-----------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX|State ;
-+------------+----------------------------------------------------------------------+
-; Name       ; State.READ                                                           ;
-+------------+----------------------------------------------------------------------+
-; State.IDLE ; 0                                                                    ;
-; State.READ ; 1                                                                    ;
-+------------+----------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; State Machine - |DE10_Lite_wr|TOP:BOARD1|UART_rs232_rx:I_RS232RX|State ;
++------------+-----------------------------------------------------------+
+; Name       ; State.READ                                                ;
++------------+-----------------------------------------------------------+
+; State.IDLE ; 0                                                         ;
+; State.READ ; 1                                                         ;
++------------+-----------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------+
@@ -376,17 +376,17 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|Bit[4]     ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX|in_data[0] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX|Bit[0]     ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |two_boards_DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX|counter[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |two_boards_DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|counter[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX|in_data[0] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX|Bit[0]     ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|Bit[4]     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE10_Lite_wr|TOP:BOARD1|UART_rs232_tx:I_RS232TX|counter[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE10_Lite_wr|TOP:BOARD2|UART_rs232_rx:I_RS232RX|counter[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -778,14 +778,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 75                          ;
+; boundary_port         ; 65                          ;
 ; cycloneiii_ff         ; 92                          ;
 ;     CLR               ; 3                           ;
 ;     CLR SLD           ; 33                          ;
 ;     ENA               ; 34                          ;
 ;     SCLR              ; 2                           ;
 ;     plain             ; 20                          ;
-; cycloneiii_io_obuf    ; 10                          ;
 ; cycloneiii_lcell_comb ; 481                         ;
 ;     arith             ; 152                         ;
 ;         1 data inputs ; 4                           ;
@@ -799,7 +798,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 95                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 14.90                       ;
-; Average LUT depth     ; 8.94                        ;
+; Average LUT depth     ; 9.08                        ;
 +-----------------------+-----------------------------+
 
 
@@ -818,152 +817,137 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 13 16:54:42 2024
+    Info: Processing started: Tue Mar 19 01:50:13 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TOP -c TOP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/segmentos_7/segmentos_7.v
-    Info (12023): Found entity 1: segmentos_7 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/segmentos_7/segmentos_7.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/uart_232/src/uart_tx.v
-    Info (12023): Found entity 1: UART_rs232_tx File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_tx.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/uart_232/src/uart_rx.v
-    Info (12023): Found entity 1: UART_rs232_rx File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_rx.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/uart_232/src/uart_baudrate_generator.v
-    Info (12023): Found entity 1: UART_BaudRate_generator File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_baudrate_generator.v Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/uart_232/src/top.v
-    Info (12023): Found entity 1: TOP File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/TOP.v Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/uart_232/src/de10_lite_wr.v
-    Info (12023): Found entity 1: DE10_Lite_wr File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/DE10_Lite_wr.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/finished_labs/uart_232/src/two_boards_de10_lite_wr.v
-    Info (12023): Found entity 1: two_boards_DE10_Lite_wr File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 2
-Info (12127): Elaborating entity "two_boards_DE10_Lite_wr" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at two_boards_DE10_Lite_wr.v(31): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 31
-Warning (10230): Verilog HDL assignment warning at two_boards_DE10_Lite_wr.v(32): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 32
-Warning (10230): Verilog HDL assignment warning at two_boards_DE10_Lite_wr.v(33): truncated value with size 32 to match size of target (3) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
-Warning (10230): Verilog HDL assignment warning at two_boards_DE10_Lite_wr.v(58): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 58
-Warning (10230): Verilog HDL assignment warning at two_boards_DE10_Lite_wr.v(59): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 59
-Warning (10230): Verilog HDL assignment warning at two_boards_DE10_Lite_wr.v(60): truncated value with size 32 to match size of target (3) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 60
-Warning (10034): Output port "LEDR" at two_boards_DE10_Lite_wr.v(11) has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-Info (12128): Elaborating entity "segmentos_7" for hierarchy "segmentos_7:RECEIVER_DISPLAY1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 39
-Info (12128): Elaborating entity "TOP" for hierarchy "TOP:BOARD1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 97
-Info (12128): Elaborating entity "UART_rs232_rx" for hierarchy "TOP:BOARD1|UART_rs232_rx:I_RS232RX" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/TOP.v Line: 48
-Warning (10230): Verilog HDL assignment warning at UART_rx.v(99): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_rx.v Line: 99
-Warning (10230): Verilog HDL assignment warning at UART_rx.v(110): truncated value with size 32 to match size of target (5) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_rx.v Line: 110
-Info (12128): Elaborating entity "UART_rs232_tx" for hierarchy "TOP:BOARD1|UART_rs232_tx:I_RS232TX" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/TOP.v Line: 60
-Warning (10230): Verilog HDL assignment warning at UART_tx.v(104): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_tx.v Line: 104
-Warning (10230): Verilog HDL assignment warning at UART_tx.v(124): truncated value with size 32 to match size of target (5) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/UART_tx.v Line: 124
-Info (12128): Elaborating entity "UART_BaudRate_generator" for hierarchy "TOP:BOARD1|UART_BaudRate_generator:I_BAUDGEN" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/TOP.v Line: 68
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/7segment_display/segmentos_7.v
+    Info (12023): Found entity 1: segmentos_7 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/uart/src/uart_tx.v
+    Info (12023): Found entity 1: UART_rs232_tx File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/uart/src/uart_rx.v
+    Info (12023): Found entity 1: UART_rs232_rx File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/uart/src/uart_baudrate_generator.v
+    Info (12023): Found entity 1: UART_BaudRate_generator File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_baudrate_generator.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/uart/src/top.v
+    Info (12023): Found entity 1: TOP File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/uart/src/de10_lite_wr.v
+    Info (12023): Found entity 1: DE10_Lite_wr File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/uart/src/two_boards_de10_lite_wr.v
+    Info (12023): Found entity 1: two_boards_DE10_Lite_wr File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/two_boards_DE10_Lite_wr.v Line: 2
+Info (12127): Elaborating entity "DE10_Lite_wr" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at DE10_Lite_wr.v(28): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 28
+Warning (10230): Verilog HDL assignment warning at DE10_Lite_wr.v(29): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 29
+Warning (10230): Verilog HDL assignment warning at DE10_Lite_wr.v(30): truncated value with size 32 to match size of target (3) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
+Warning (10230): Verilog HDL assignment warning at DE10_Lite_wr.v(55): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 55
+Warning (10230): Verilog HDL assignment warning at DE10_Lite_wr.v(56): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 56
+Warning (10230): Verilog HDL assignment warning at DE10_Lite_wr.v(57): truncated value with size 32 to match size of target (3) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 57
+Warning (10034): Output port "LEDR" at DE10_Lite_wr.v(8) has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+Info (12128): Elaborating entity "segmentos_7" for hierarchy "segmentos_7:RECEIVER_DISPLAY1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 36
+Info (12128): Elaborating entity "TOP" for hierarchy "TOP:BOARD1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 94
+Info (12128): Elaborating entity "UART_rs232_rx" for hierarchy "TOP:BOARD1|UART_rs232_rx:I_RS232RX" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v Line: 48
+Warning (10230): Verilog HDL assignment warning at UART_rx.v(99): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v Line: 99
+Warning (10230): Verilog HDL assignment warning at UART_rx.v(110): truncated value with size 32 to match size of target (5) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v Line: 110
+Info (12128): Elaborating entity "UART_rs232_tx" for hierarchy "TOP:BOARD1|UART_rs232_tx:I_RS232TX" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v Line: 60
+Warning (10230): Verilog HDL assignment warning at UART_tx.v(104): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v Line: 104
+Warning (10230): Verilog HDL assignment warning at UART_tx.v(124): truncated value with size 32 to match size of target (5) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v Line: 124
+Info (12128): Elaborating entity "UART_BaudRate_generator" for hierarchy "TOP:BOARD1|UART_BaudRate_generator:I_BAUDGEN" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v Line: 68
 Info (278001): Inferred 10 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 31
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 32
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 32
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 58
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 59
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 59
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div3" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 60
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod5" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 60
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 31
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 31
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 28
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 29
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 29
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 55
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 56
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 56
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div3" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 57
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod5" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 57
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 28
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 28
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ckl.tdf
-    Info (12023): Found entity 1: lpm_divide_ckl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_ckl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_ckl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_ckl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/sign_div_unsign_bkh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/sign_div_unsign_bkh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0fe.tdf
-    Info (12023): Found entity 1: alt_u_div_0fe File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_0fe.tdf Line: 26
+    Info (12023): Found entity 1: alt_u_div_0fe File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_0fe.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
-    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/add_sub_t3c.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/add_sub_t3c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
-    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/add_sub_u3c.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 32
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 32
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/add_sub_u3c.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 29
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 29
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9sl.tdf
-    Info (12023): Found entity 1: lpm_divide_9sl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_9sl.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
-Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
+    Info (12023): Found entity 1: lpm_divide_9sl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_9sl.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_csl.tdf
-    Info (12023): Found entity 1: lpm_divide_csl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_csl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_csl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_csl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ekh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_ekh File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/sign_div_unsign_ekh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_ekh File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/sign_div_unsign_ekh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6fe.tdf
-    Info (12023): Found entity 1: alt_u_div_6fe File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_6fe.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
-Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 33
+    Info (12023): Found entity 1: alt_u_div_6fe File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_6fe.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
+Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 30
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fkl.tdf
-    Info (12023): Found entity 1: lpm_divide_fkl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/lpm_divide_fkl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_fkl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/lpm_divide_fkl.tdf Line: 24
 Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "ARDUINO_IO[0]" and its non-tri-state driver. File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "ARDUINO_IO[0]~synth" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 11
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 14
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 16
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 8
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 11
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 13 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_7_result_int[0]~0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_0fe.tdf Line: 61
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_6_result_int[0]~10" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_0fe.tdf Line: 56
-    Info (17048): Logic cell "lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_7_result_int[0]~0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_0fe.tdf Line: 61
-    Info (17048): Logic cell "lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_6_result_int[0]~10" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/db/alt_u_div_0fe.tdf Line: 56
-Info (144001): Generated suppressed messages file C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/output_files/TOP.map.smsg
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_7_result_int[0]~0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_0fe.tdf Line: 61
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_6_result_int[0]~10" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_0fe.tdf Line: 56
+    Info (17048): Logic cell "lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_7_result_int[0]~0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_0fe.tdf Line: 61
+    Info (17048): Logic cell "lpm_divide:Mod4|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_6_result_int[0]~10" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/db/alt_u_div_0fe.tdf Line: 56
+Info (144001): Generated suppressed messages file C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/output_files/TOP.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 4
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/src/two_boards_DE10_Lite_wr.v Line: 5
-Info (21057): Implemented 569 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 4
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v Line: 5
+Info (21057): Implemented 559 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 52 output pins
-    Info (21060): Implemented 10 bidirectional pins
     Info (21061): Implemented 494 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4853 megabytes
-    Info: Processing ended: Wed Mar 13 16:54:51 2024
-    Info: Elapsed time: 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Tue Mar 19 01:50:23 2024
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:09
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/UART_232/misc/output_files/TOP.map.smsg.
+The suppressed messages can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/output_files/TOP.map.smsg.
 
 

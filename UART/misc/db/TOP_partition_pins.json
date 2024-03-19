@@ -164,14 +164,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "ARDUINO_IO[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ARDUINO_IO[1]",
-					"strict" : false
-				},
-				{
 					"name" : "SW[0]",
 					"strict" : false
 				},

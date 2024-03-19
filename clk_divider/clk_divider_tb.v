@@ -31,7 +31,7 @@ begin
 	rst_tb = 0;
 	#1000
 	
-	$stop;
+	$Stop;
 end
 
 

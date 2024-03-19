@@ -1,5 +1,5 @@
 Fitter report for vga
-Fri Mar 15 07:45:33 2024
+Tue Mar 19 00:53:25 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Mar 15 07:45:33 2024       ;
+; Fitter Status                      ; Successful - Tue Mar 19 00:53:25 2024       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; vga                                         ;
 ; Top-level Entity Name              ; vga_wr                                      ;
@@ -538,7 +538,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/output_files/vga.pin.
+The pin-out file can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/output_files/vga.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1669,10 +1669,10 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node vga_top:top|clockdiv:U1|q[0]  File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/clockdiv.v Line: 24
+Info (176353): Automatically promoted node vga_top:top|clockdiv:U1|q[0]  File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/clockdiv.v Line: 24
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node vga_top:top|clockdiv:U1|q[0]~0 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/clockdiv.v Line: 24
+        Info (176357): Destination node vga_top:top|clockdiv:U1|q[0]~0 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/clockdiv.v Line: 24
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1862,28 +1862,28 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 11 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 4
-    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v Line: 3
-Info (144001): Generated suppressed messages file C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/output_files/vga.fit.smsg
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 4
+    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v Line: 3
+Info (144001): Generated suppressed messages file C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/output_files/vga.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 171 warnings
-    Info: Peak virtual memory: 6599 megabytes
-    Info: Processing ended: Fri Mar 15 07:45:33 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 6598 megabytes
+    Info: Processing ended: Tue Mar 19 00:53:26 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/output_files/vga.fit.smsg.
+The suppressed messages can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/output_files/vga.fit.smsg.
 
 

@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/simulation/modelsim
+vcmp
+Z1 !s110 1710832438
+!i10b 1
+!s100 nbeT:dRijZ?UaOTFMc=cT1
+In0P5iZzze6?PKZPYISkE23
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1710188466
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1710832438.000000
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm
+Z8 tCvgOpt 0
+vcounter
+R1
+!i10b 1
+!s100 Tihj:;d=Y>N<@JNfFXiEd1
+IflZzFPW:aeAIO;15<WbSj2
+R2
+R0
+R3
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/counter.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/counter.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/counter.v|
+!i113 1
+R6
+R7
+R8
+vpwm_tb
+R1
+!i10b 1
+!s100 n`6SGLT?Deg8h7Rf?Pa1D3
+I>dH3DNH]YKQEoZnkM0IQh3
+R2
+R0
+w1710832418
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v|
+!i113 1
+R6
+R7
+R8
+vsegmentos_7
+R1
+!i10b 1
+!s100 SV^;GzI_bNFP6<n>kbaOa3
+Ig:RTDAj^>KKLLSKI1Bo;F0
+R2
+R0
+w1709321843
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display
+R8
+vtop_level_pwm
+R1
+!i10b 1
+!s100 z?9cj5j0bU76=L?Q4T`9f3
+IT_TiW<5Ig<Bd7@[AGlI>[3
+R2
+R0
+w1710188998
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v|
+!i113 1
+R6
+R7
+R8
+vtop_level_pwm_wr
+R1
+!i10b 1
+!s100 z:[i4DGfI]LR::k5>oVVQ0
+I8`e@DY1TkJkl@<OoNP;De2
+R2
+R0
+w1710188467
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v|
+!i113 1
+R6
+R7
+R8

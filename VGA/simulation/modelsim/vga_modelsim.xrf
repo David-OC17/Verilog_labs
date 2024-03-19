@@ -1,10 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga640x480.v
-source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_wr.v
-source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/vga_top.v
-source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/clockdiv.v
-source_file = 1, ../pin_assigment.tcl
-source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/FINISHED_LABS/vga/db/vga.cbx.xml
+source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga640x480.v
+source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_wr.v
+source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/vga_top.v
+source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/clockdiv.v
+source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/pin_assigment.tcl
+source_file = 1, C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/VGA/db/vga.cbx.xml
 design_name = vga_wr
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, vga_wr, 1
 instance = comp, \VGA_R[0]~output , VGA_R[0]~output, vga_wr, 1

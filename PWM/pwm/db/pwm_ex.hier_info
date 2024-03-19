@@ -1,4 +1,7 @@
-|top_level_pwm_wr
+|pwm_tb
+
+
+|pwm_tb|top_level_pwm_wr:dut
 MAX10_CLK1_50 => MAX10_CLK1_50.IN1
 KEY[0] => KEY[0].IN1
 KEY[1] => ~NO_FANOUT~
@@ -10,40 +13,40 @@ SW[4] => SW[4].IN1
 SW[5] => SW[5].IN1
 SW[6] => SW[6].IN1
 SW[7] => SW[7].IN1
-HEX0[0] << top_level_pwm:wr_top_level.wire_unidades
-HEX0[1] << top_level_pwm:wr_top_level.wire_unidades
-HEX0[2] << top_level_pwm:wr_top_level.wire_unidades
-HEX0[3] << top_level_pwm:wr_top_level.wire_unidades
-HEX0[4] << top_level_pwm:wr_top_level.wire_unidades
-HEX0[5] << top_level_pwm:wr_top_level.wire_unidades
-HEX0[6] << top_level_pwm:wr_top_level.wire_unidades
-HEX1[0] << top_level_pwm:wr_top_level.wire_decenas
-HEX1[1] << top_level_pwm:wr_top_level.wire_decenas
-HEX1[2] << top_level_pwm:wr_top_level.wire_decenas
-HEX1[3] << top_level_pwm:wr_top_level.wire_decenas
-HEX1[4] << top_level_pwm:wr_top_level.wire_decenas
-HEX1[5] << top_level_pwm:wr_top_level.wire_decenas
-HEX1[6] << top_level_pwm:wr_top_level.wire_decenas
-HEX2[0] << top_level_pwm:wr_top_level.wire_centenas
-HEX2[1] << top_level_pwm:wr_top_level.wire_centenas
-HEX2[2] << top_level_pwm:wr_top_level.wire_centenas
-HEX2[3] << top_level_pwm:wr_top_level.wire_centenas
-HEX2[4] << top_level_pwm:wr_top_level.wire_centenas
-HEX2[5] << top_level_pwm:wr_top_level.wire_centenas
-HEX2[6] << top_level_pwm:wr_top_level.wire_centenas
-ARDUINO_IO[0] << top_level_pwm:wr_top_level.pwm_pin
-ARDUINO_IO[1] << <GND>
-ARDUINO_IO[2] << <GND>
-ARDUINO_IO[3] << <GND>
-ARDUINO_IO[4] << <GND>
-ARDUINO_IO[5] << <GND>
-ARDUINO_IO[6] << <GND>
-ARDUINO_IO[7] << <GND>
-ARDUINO_IO[8] << <GND>
-ARDUINO_IO[9] << <GND>
+HEX0[0] <= top_level_pwm:wr_top_level.wire_unidades
+HEX0[1] <= top_level_pwm:wr_top_level.wire_unidades
+HEX0[2] <= top_level_pwm:wr_top_level.wire_unidades
+HEX0[3] <= top_level_pwm:wr_top_level.wire_unidades
+HEX0[4] <= top_level_pwm:wr_top_level.wire_unidades
+HEX0[5] <= top_level_pwm:wr_top_level.wire_unidades
+HEX0[6] <= top_level_pwm:wr_top_level.wire_unidades
+HEX1[0] <= top_level_pwm:wr_top_level.wire_decenas
+HEX1[1] <= top_level_pwm:wr_top_level.wire_decenas
+HEX1[2] <= top_level_pwm:wr_top_level.wire_decenas
+HEX1[3] <= top_level_pwm:wr_top_level.wire_decenas
+HEX1[4] <= top_level_pwm:wr_top_level.wire_decenas
+HEX1[5] <= top_level_pwm:wr_top_level.wire_decenas
+HEX1[6] <= top_level_pwm:wr_top_level.wire_decenas
+HEX2[0] <= top_level_pwm:wr_top_level.wire_centenas
+HEX2[1] <= top_level_pwm:wr_top_level.wire_centenas
+HEX2[2] <= top_level_pwm:wr_top_level.wire_centenas
+HEX2[3] <= top_level_pwm:wr_top_level.wire_centenas
+HEX2[4] <= top_level_pwm:wr_top_level.wire_centenas
+HEX2[5] <= top_level_pwm:wr_top_level.wire_centenas
+HEX2[6] <= top_level_pwm:wr_top_level.wire_centenas
+ARDUINO_IO[0] <= top_level_pwm:wr_top_level.pwm_pin
+ARDUINO_IO[1] <= <GND>
+ARDUINO_IO[2] <= <GND>
+ARDUINO_IO[3] <= <GND>
+ARDUINO_IO[4] <= <GND>
+ARDUINO_IO[5] <= <GND>
+ARDUINO_IO[6] <= <GND>
+ARDUINO_IO[7] <= <GND>
+ARDUINO_IO[8] <= <GND>
+ARDUINO_IO[9] <= <GND>
 
 
-|top_level_pwm_wr|top_level_pwm:wr_top_level
+|pwm_tb|top_level_pwm_wr:dut|top_level_pwm:wr_top_level
 clk => clk.IN1
 rst_n_a => rst_n_a.IN1
 sw_grados[0] => sw_grados[0].IN1
@@ -78,7 +81,7 @@ wire_centenas[5] <= segmentos_7:CENTENAS.data_segmentos_out
 wire_centenas[6] <= segmentos_7:CENTENAS.data_segmentos_out
 
 
-|top_level_pwm_wr|top_level_pwm:wr_top_level|counter:counter_pwm
+|pwm_tb|top_level_pwm_wr:dut|top_level_pwm:wr_top_level|counter:counter_pwm
 clk => counter_out[0]~reg0.CLK
 clk => counter_out[1]~reg0.CLK
 clk => counter_out[2]~reg0.CLK
@@ -177,7 +180,7 @@ counter_out[30] <= counter_out[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 counter_out[31] <= counter_out[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm
+|pwm_tb|top_level_pwm_wr:dut|top_level_pwm:wr_top_level|cmp:cmp_pwm
 counter_in[0] => LessThan1.IN46
 counter_in[1] => LessThan1.IN45
 counter_in[2] => LessThan1.IN44
@@ -229,7 +232,7 @@ sw_input[7] => Mult0.IN9
 pwm_out <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level_pwm_wr|top_level_pwm:wr_top_level|segmentos_7:UNIDADES
+|pwm_tb|top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:UNIDADES
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -247,7 +250,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level_pwm_wr|top_level_pwm:wr_top_level|segmentos_7:DECENAS
+|pwm_tb|top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:DECENAS
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -265,7 +268,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level_pwm_wr|top_level_pwm:wr_top_level|segmentos_7:CENTENAS
+|pwm_tb|top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:CENTENAS
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5

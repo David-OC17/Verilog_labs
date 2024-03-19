@@ -1,52 +1,7 @@
-|segmentos_7_wr
-SW[0] => Mod0.IN11
-SW[0] => Div0.IN11
-SW[0] => Div1.IN14
-SW[1] => Mod0.IN10
-SW[1] => Div0.IN10
-SW[1] => Div1.IN13
-SW[2] => Mod0.IN9
-SW[2] => Div0.IN9
-SW[2] => Div1.IN12
-SW[3] => Mod0.IN8
-SW[3] => Div0.IN8
-SW[3] => Div1.IN11
-SW[4] => Mod0.IN7
-SW[4] => Div0.IN7
-SW[4] => Div1.IN10
-SW[5] => Mod0.IN6
-SW[5] => Div0.IN6
-SW[5] => Div1.IN9
-SW[6] => Mod0.IN5
-SW[6] => Div0.IN5
-SW[6] => Div1.IN8
-SW[7] => Mod0.IN4
-SW[7] => Div0.IN4
-SW[7] => Div1.IN7
-HEX0[0] << segmentos_7:UNIDADES.data_segmentos_out
-HEX0[1] << segmentos_7:UNIDADES.data_segmentos_out
-HEX0[2] << segmentos_7:UNIDADES.data_segmentos_out
-HEX0[3] << segmentos_7:UNIDADES.data_segmentos_out
-HEX0[4] << segmentos_7:UNIDADES.data_segmentos_out
-HEX0[5] << segmentos_7:UNIDADES.data_segmentos_out
-HEX0[6] << segmentos_7:UNIDADES.data_segmentos_out
-HEX1[0] << segmentos_7:DECENAS.data_segmentos_out
-HEX1[1] << segmentos_7:DECENAS.data_segmentos_out
-HEX1[2] << segmentos_7:DECENAS.data_segmentos_out
-HEX1[3] << segmentos_7:DECENAS.data_segmentos_out
-HEX1[4] << segmentos_7:DECENAS.data_segmentos_out
-HEX1[5] << segmentos_7:DECENAS.data_segmentos_out
-HEX1[6] << segmentos_7:DECENAS.data_segmentos_out
-HEX2[0] << segmentos_7:CENTENAS.data_segmentos_out
-HEX2[1] << segmentos_7:CENTENAS.data_segmentos_out
-HEX2[2] << segmentos_7:CENTENAS.data_segmentos_out
-HEX2[3] << segmentos_7:CENTENAS.data_segmentos_out
-HEX2[4] << segmentos_7:CENTENAS.data_segmentos_out
-HEX2[5] << segmentos_7:CENTENAS.data_segmentos_out
-HEX2[6] << segmentos_7:CENTENAS.data_segmentos_out
+|segmentos_7_tb
 
 
-|segmentos_7_wr|segmentos_7:UNIDADES
+|segmentos_7_tb|segmentos_7:UNIDADES
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -64,7 +19,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|segmentos_7_wr|segmentos_7:DECENAS
+|segmentos_7_tb|segmentos_7:DECENAS
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5
@@ -82,7 +37,7 @@ data_segmentos_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 data_segmentos_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|segmentos_7_wr|segmentos_7:CENTENAS
+|segmentos_7_tb|segmentos_7:CENTENAS
 data_segmentos_in[0] => Decoder0.IN7
 data_segmentos_in[1] => Decoder0.IN6
 data_segmentos_in[2] => Decoder0.IN5

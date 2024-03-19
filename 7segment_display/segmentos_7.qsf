@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY segmentos_7_wr
+set_global_assignment -name TOP_LEVEL_ENTITY segmentos_7_tb
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:36:06  MARCH 01, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -239,6 +239,7 @@ set_location_assignment PIN_AB3 -to GPIO[32]
 set_location_assignment PIN_Y3 -to GPIO[33]
 set_location_assignment PIN_AB2 -to GPIO[34]
 set_location_assignment PIN_AA2 -to GPIO[35]
+set_global_assignment -name VERILOG_FILE segmentos_7_tb.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -427,4 +428,10 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH segmentos_7_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME segmentos_7_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id segmentos_7_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME segmentos_7_tb -section_id segmentos_7_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE segmentos_7_tb.v -section_id segmentos_7_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

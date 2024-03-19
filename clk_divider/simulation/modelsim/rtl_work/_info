@@ -7,47 +7,47 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/simulation/modelsim
+Z0 dC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/simulation/modelsim
 vclk_divider
-Z1 !s110 1708631622
+Z1 !s110 1710831010
 !i10b 1
-!s100 jh0f2:ISLRPFOaRiC^N?X2
-I=WzQY>gkAoKb40M0flB7F3
+!s100 P6glK[eQddC3RC=OlcR5d2
+I455ciUV`06kZ?;Lg[Ad@83
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1708631051
-8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider.v
-FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider.v
+w1709322722
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider.v
 L0 3
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1708631622.000000
-!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider.v|
+Z4 !s108 1710831010.000000
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider
 Z7 tCvgOpt 0
 vclk_divider_tb
 R1
 !i10b 1
-!s100 5J8V1Md`2X_]XeLB394Z13
-I7:[UOij^Rn=;T?[_mz7aV3
+!s100 XART7LJD5`i3Q@TY=iemB1
+IZSQcmnRBLSdJUPGf`OgA43
 R2
 R0
-w1708631223
-8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider_tb.v
-FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider_tb.v
+w1710830956
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider_tb.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider_tb.v
 L0 5
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/clk_divider/clk_divider_tb.v|
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/clk_divider/clk_divider_tb.v|
 !i113 1
 R5
 R6

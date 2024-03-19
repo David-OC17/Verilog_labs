@@ -1,5 +1,5 @@
 Fitter report for Accelerometer
-Mon Mar 18 19:24:34 2024
+Tue Mar 19 00:32:46 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Mar 18 19:24:34 2024       ;
+; Fitter Status                      ; Successful - Tue Mar 19 00:32:46 2024       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Accelerometer                               ;
 ; Top-level Entity Name              ; accel                                       ;
@@ -157,19 +157,19 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.31        ;
+; Average used               ; 1.37        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.1%      ;
-;     Processor 3            ;   2.1%      ;
-;     Processor 4            ;   2.1%      ;
-;     Processor 5            ;   2.1%      ;
-;     Processor 6            ;   2.1%      ;
-;     Processor 7            ;   2.1%      ;
-;     Processor 8            ;   2.1%      ;
-;     Processors 9-16        ;   2.1%      ;
+;     Processor 2            ;   2.5%      ;
+;     Processor 3            ;   2.5%      ;
+;     Processor 4            ;   2.4%      ;
+;     Processor 5            ;   2.4%      ;
+;     Processor 6            ;   2.4%      ;
+;     Processor 7            ;   2.4%      ;
+;     Processor 8            ;   2.4%      ;
+;     Processors 9-16        ;   2.4%      ;
 +----------------------------+-------------+
 
 
@@ -2265,7 +2265,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2278,7 +2278,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.33 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2310,10 +2310,10 @@ Warning (169064): Following 2 pins have no output enable or a GND or VCC output 
     Info (169065): Pin GSENSOR_SDO has a permanently disabled output enable File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/accelerometer/accel.v Line: 38
 Info (144001): Generated suppressed messages file C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/accelerometer/output_files/Accelerometer.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 115 warnings
-    Info: Peak virtual memory: 6630 megabytes
-    Info: Processing ended: Mon Mar 18 19:24:35 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 6633 megabytes
+    Info: Processing ended: Tue Mar 19 00:32:47 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +----------------------------+
