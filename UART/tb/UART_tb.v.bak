@@ -1,0 +1,27 @@
+
+// Testbench
+
+module UART_tb();
+
+wire clk;
+wire [9:0] SW;
+wire
+
+DE10_Lite_wr DUT(
+	.MAX10_CLK1_50, // clock
+	.SW,   // Input for transmiter   
+	.KEY, // RST
+	
+	//LED indicators
+	output   [9:0]   LEDR,
+	
+	//Decoders
+	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5
+
+);
+
+
+
+
+
+endmodule

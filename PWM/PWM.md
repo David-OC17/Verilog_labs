@@ -11,7 +11,7 @@ This lab focuses on implementing Pulse Width Modulation (PWM) using an FPGA. Stu
 ![alt text](testbench.png)
 
 # Implementation
-
+![alt text](implementation.jpg)
 
 # Lessons from the lab
 1. **PWM Generation**: Learn to generate PWM signals using a dedicated module (`cmp_pwm`), controlling the duty cycle based on a counter value and switch input (`sw_grados`).

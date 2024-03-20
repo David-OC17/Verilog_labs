@@ -5,6 +5,10 @@ This lab presents the UART (Universal Asynchronous Receiver-Transmitter) activit
 # Schematic
 ![alt text](RTL_shcematic.png)
 
+# Testbench
+![alt text](testbench.png)
+
+
 # Implementation
 ![alt text](implementation.jpg)
 

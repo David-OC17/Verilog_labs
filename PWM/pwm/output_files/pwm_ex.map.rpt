@@ -1,5 +1,5 @@
-Analysis & Elaboration report for pwm_ex
-Tue Mar 19 01:13:49 2024
+Analysis & Synthesis report for pwm_ex
+Tue Mar 19 19:41:17 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -7,16 +7,28 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: top_level_pwm_wr:dut|top_level_pwm:wr_top_level|counter:counter_pwm
-  5. Analysis & Elaboration Settings
-  6. Port Connectivity Checks: "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:CENTENAS"
-  7. Port Connectivity Checks: "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:DECENAS"
-  8. Port Connectivity Checks: "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:UNIDADES"
-  9. Port Connectivity Checks: "top_level_pwm_wr:dut"
- 10. Analysis & Elaboration Messages
- 11. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: top_level_pwm:wr_top_level|counter:counter_pwm
+ 10. Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Mod0
+ 11. Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Div0
+ 12. Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Mod1
+ 13. Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Div1
+ 14. Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Mod2
+ 15. Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0
+ 16. lpm_mult Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "top_level_pwm:wr_top_level|segmentos_7:CENTENAS"
+ 18. Port Connectivity Checks: "top_level_pwm:wr_top_level|segmentos_7:DECENAS"
+ 19. Port Connectivity Checks: "top_level_pwm:wr_top_level|segmentos_7:UNIDADES"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -40,61 +52,34 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Mar 19 01:13:49 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 19 19:41:17 2024       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; pwm_ex                                      ;
-; Top-level Entity Name              ; pwm_tb                                      ;
+; Top-level Entity Name              ; top_level_pwm_wr                            ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 301                                         ;
+;     Total combinational functions  ; 301                                         ;
+;     Dedicated logic registers      ; 32                                          ;
+; Total registers                    ; 32                                          ;
+; Total pins                         ; 42                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: top_level_pwm_wr:dut|top_level_pwm:wr_top_level|counter:counter_pwm ;
-+----------------+----------+--------------------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                                 ;
-+----------------+----------+--------------------------------------------------------------------------------------+
-; clk_freq       ; 50000000 ; Signed Integer                                                                       ;
-; counter_max    ; 1000000  ; Signed Integer                                                                       ;
-+----------------+----------+--------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; pwm_tb             ; pwm_ex             ;
+; Top-level entity name                                            ; top_level_pwm_wr   ; pwm_ex             ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -174,8 +159,338 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++--------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                            ; Library ;
++--------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; ../../7segment_display/segmentos_7.v ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v     ;         ;
+; counter.v                            ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/counter.v                  ;         ;
+; cmp.v                                ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v                      ;         ;
+; top_level_pwm.v                      ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v            ;         ;
+; top_level_pwm_wr.v                   ; yes             ; User Verilog HDL File        ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v         ;         ;
+; lpm_divide.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf                                   ;         ;
+; abs_divider.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc                                  ;         ;
+; sign_div_unsign.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc                              ;         ;
+; aglobal180.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc                                   ;         ;
+; db/lpm_divide_ckl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_ckl.tdf      ;         ;
+; db/sign_div_unsign_bkh.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/sign_div_unsign_bkh.tdf ;         ;
+; db/alt_u_div_0fe.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/alt_u_div_0fe.tdf       ;         ;
+; db/add_sub_t3c.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/add_sub_u3c.tdf         ;         ;
+; db/lpm_divide_9sl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_9sl.tdf      ;         ;
+; db/lpm_divide_csl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_csl.tdf      ;         ;
+; db/sign_div_unsign_ekh.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/sign_div_unsign_ekh.tdf ;         ;
+; db/alt_u_div_6fe.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/alt_u_div_6fe.tdf       ;         ;
+; db/lpm_divide_fkl.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_fkl.tdf      ;         ;
+; lpm_mult.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mult.tdf                                     ;         ;
+; lpm_add_sub.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_add_sub.inc                                  ;         ;
+; multcore.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/multcore.inc                                     ;         ;
+; bypassff.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc                                     ;         ;
+; altshift.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc                                     ;         ;
+; multcore.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/multcore.tdf                                     ;         ;
+; csa_add.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/csa_add.inc                                      ;         ;
+; mpar_add.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mpar_add.inc                                     ;         ;
+; muleabz.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/muleabz.inc                                      ;         ;
+; mul_lfrg.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mul_lfrg.inc                                     ;         ;
+; mul_boothc.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mul_boothc.inc                                   ;         ;
+; alt_ded_mult.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/alt_ded_mult.inc                                 ;         ;
+; alt_ded_mult_y.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/alt_ded_mult_y.inc                               ;         ;
+; dffpipe.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/dffpipe.inc                                      ;         ;
+; mpar_add.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mpar_add.tdf                                     ;         ;
+; lpm_add_sub.tdf                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_add_sub.tdf                                  ;         ;
+; addcore.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/addcore.inc                                      ;         ;
+; look_add.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/look_add.inc                                     ;         ;
+; alt_stratix_add_sub.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                          ;         ;
+; db/add_sub_crg.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/add_sub_crg.tdf         ;         ;
+; altshift.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.tdf                                     ;         ;
++--------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 301         ;
+;                                             ;             ;
+; Total combinational functions               ; 301         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 74          ;
+;     -- 3 input functions                    ; 68          ;
+;     -- <=2 input functions                  ; 159         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 175         ;
+;     -- arithmetic mode                      ; 126         ;
+;                                             ;             ;
+; Total registers                             ; 32          ;
+;     -- Dedicated logic registers            ; 32          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 42          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[6]~input ;
+; Maximum fan-out                             ; 33          ;
+; Total fan-out                               ; 974         ;
+; Average fan-out                             ; 2.34        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                      ;
++---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                        ; Entity Name         ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |top_level_pwm_wr                                 ; 301 (0)             ; 32 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 42   ; 0            ; 0          ; |top_level_pwm_wr                                                                                                                                          ; top_level_pwm_wr    ; work         ;
+;    |top_level_pwm:wr_top_level|                   ; 301 (0)             ; 32 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level                                                                                                               ; top_level_pwm       ; work         ;
+;       |cmp:cmp_pwm|                               ; 77 (48)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm                                                                                                   ; cmp                 ; work         ;
+;          |lpm_mult:Mult0|                         ; 29 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0                                                                                    ; lpm_mult            ; work         ;
+;             |multcore:mult_core|                  ; 29 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core                                                                 ; multcore            ; work         ;
+;                |mpar_add:padder|                  ; 11 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ; mpar_add            ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 11 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ; lpm_add_sub         ; work         ;
+;                      |add_sub_crg:auto_generated| ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_crg:auto_generated ; add_sub_crg         ; work         ;
+;       |counter:counter_pwm|                       ; 43 (43)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|counter:counter_pwm                                                                                           ; counter             ; work         ;
+;       |lpm_divide:Div0|                           ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div0                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_9sl:auto_generated|          ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                                 ; lpm_divide_9sl      ; work         ;
+;             |sign_div_unsign_bkh:divider|         ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                                     ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|            ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider               ; alt_u_div_0fe       ; work         ;
+;       |lpm_divide:Div1|                           ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div1                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_csl:auto_generated|          ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div1|lpm_divide_csl:auto_generated                                                                 ; lpm_divide_csl      ; work         ;
+;             |sign_div_unsign_ekh:divider|         ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div1|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider                                     ; sign_div_unsign_ekh ; work         ;
+;                |alt_u_div_6fe:divider|            ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Div1|lpm_divide_csl:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_6fe:divider               ; alt_u_div_6fe       ; work         ;
+;       |lpm_divide:Mod0|                           ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod0                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|          ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                                 ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider|         ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                                     ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|            ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider               ; alt_u_div_0fe       ; work         ;
+;       |lpm_divide:Mod1|                           ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod1                                                                                               ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|          ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod1|lpm_divide_ckl:auto_generated                                                                 ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider|         ; 24 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                                     ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|            ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider               ; alt_u_div_0fe       ; work         ;
+;       |segmentos_7:CENTENAS|                      ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|segmentos_7:CENTENAS                                                                                          ; segmentos_7         ; work         ;
+;       |segmentos_7:DECENAS|                       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|segmentos_7:DECENAS                                                                                           ; segmentos_7         ; work         ;
+;       |segmentos_7:UNIDADES|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level_pwm_wr|top_level_pwm:wr_top_level|segmentos_7:UNIDADES                                                                                          ; segmentos_7         ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_level_pwm:wr_top_level|counter:counter_pwm ;
++----------------+----------+-----------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                            ;
++----------------+----------+-----------------------------------------------------------------+
+; clk_freq       ; 50000000 ; Signed Integer                                                  ;
+; counter_max    ; 1000000  ; Signed Integer                                                  ;
++----------------+----------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Mod0 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_9sl ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Mod1 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Div1 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                           ;
+; LPM_WIDTHD             ; 7              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_csl ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|lpm_divide:Mod2 ;
++------------------------+----------------+---------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                              ;
++------------------------+----------------+---------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                           ;
+; LPM_WIDTHD             ; 7              ; Untyped                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                           ;
+; CBXI_PARAMETER         ; lpm_divide_fkl ; Untyped                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                    ;
++------------------------+----------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0 ;
++------------------------------------------------+----------+--------------------------------------------+
+; Parameter Name                                 ; Value    ; Type                                       ;
++------------------------------------------------+----------+--------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                             ;
+; LPM_WIDTHA                                     ; 9        ; Untyped                                    ;
+; LPM_WIDTHB                                     ; 8        ; Untyped                                    ;
+; LPM_WIDTHP                                     ; 17       ; Untyped                                    ;
+; LPM_WIDTHR                                     ; 17       ; Untyped                                    ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                                    ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped                                    ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                                    ;
+; LATENCY                                        ; 0        ; Untyped                                    ;
+; INPUT_A_IS_CONSTANT                            ; YES      ; Untyped                                    ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                                    ;
+; USE_EAB                                        ; OFF      ; Untyped                                    ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                                    ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                                    ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                                    ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K                        ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                    ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                    ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                    ;
+; CBXI_PARAMETER                                 ; NOTHING  ; Untyped                                    ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                    ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                    ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                    ;
++------------------------------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                ;
++---------------------------------------+-------------------------------------------------------+
+; Name                                  ; Value                                                 ;
++---------------------------------------+-------------------------------------------------------+
+; Number of entity instances            ; 1                                                     ;
+; Entity Instance                       ; top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 9                                                     ;
+;     -- LPM_WIDTHB                     ; 8                                                     ;
+;     -- LPM_WIDTHP                     ; 17                                                    ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                              ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                                   ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                    ;
+;     -- USE_EAB                        ; OFF                                                   ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                  ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                    ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                    ;
++---------------------------------------+-------------------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:CENTENAS"                                                                                                 ;
+; Port Connectivity Checks: "top_level_pwm:wr_top_level|segmentos_7:CENTENAS"                                                                                                                      ;
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port              ; Type  ; Severity ; Details                                                                                                                                                   ;
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -184,7 +499,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:DECENAS"                                                                                                  ;
+; Port Connectivity Checks: "top_level_pwm:wr_top_level|segmentos_7:DECENAS"                                                                                                                       ;
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port              ; Type  ; Severity ; Details                                                                                                                                                   ;
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -193,7 +508,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:UNIDADES"                                                                                                 ;
+; Port Connectivity Checks: "top_level_pwm:wr_top_level|segmentos_7:UNIDADES"                                                                                                                      ;
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port              ; Type  ; Severity ; Details                                                                                                                                                   ;
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -201,26 +516,48 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "top_level_pwm_wr:dut"                                                                     ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; HEX0       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; HEX1       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; HEX2       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; ARDUINO_IO ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 42                          ;
+; cycloneiii_ff         ; 32                          ;
+;     CLR SCLR          ; 32                          ;
+; cycloneiii_lcell_comb ; 305                         ;
+;     arith             ; 126                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 61                          ;
+;         3 data inputs ; 64                          ;
+;     normal            ; 179                         ;
+;         0 data inputs ; 16                          ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 78                          ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 74                          ;
+;                       ;                             ;
+; Max LUT depth         ; 14.90                       ;
+; Average LUT depth     ; 8.99                        ;
++-----------------------+-----------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Mar 19 01:13:41 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pwm_ex -c pwm_ex --analysis_and_elaboration
+    Info: Processing started: Tue Mar 19 19:41:06 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pwm_ex -c pwm_ex
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /users/daveo/onedrive/documentos/school/uni_s.4/logic/verilog_labs/7segment_display/segmentos_7.v
@@ -235,32 +572,118 @@ Info (12021): Found 1 design units, including 1 entities, in source file top_lev
     Info (12023): Found entity 1: top_level_pwm_wr File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pwm_tb.v
     Info (12023): Found entity 1: pwm_tb File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v Line: 4
-Info (12127): Elaborating entity "pwm_tb" for the top level hierarchy
-Warning (10755): Verilog HDL warning at pwm_tb.v(27): assignments to MAX10_CLK1_50 create a combinational loop File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v Line: 27
-Warning (10175): Verilog HDL warning at pwm_tb.v(50): ignoring unsupported system task File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v Line: 50
-Info (12128): Elaborating entity "top_level_pwm_wr" for hierarchy "top_level_pwm_wr:dut" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v Line: 24
+Info (12127): Elaborating entity "top_level_pwm_wr" for the top level hierarchy
 Warning (10034): Output port "ARDUINO_IO[9..1]" at top_level_pwm_wr.v(7) has no driver File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
-Info (12128): Elaborating entity "top_level_pwm" for hierarchy "top_level_pwm_wr:dut|top_level_pwm:wr_top_level" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 17
+Info (12128): Elaborating entity "top_level_pwm" for hierarchy "top_level_pwm:wr_top_level" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 17
 Warning (10230): Verilog HDL assignment warning at top_level_pwm.v(31): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 31
 Warning (10230): Verilog HDL assignment warning at top_level_pwm.v(32): truncated value with size 32 to match size of target (4) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 32
 Warning (10230): Verilog HDL assignment warning at top_level_pwm.v(33): truncated value with size 32 to match size of target (3) File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
-Info (12128): Elaborating entity "counter" for hierarchy "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|counter:counter_pwm" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 16
-Info (12128): Elaborating entity "cmp" for hierarchy "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|cmp:cmp_pwm" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 22
-Info (12128): Elaborating entity "segmentos_7" for hierarchy "top_level_pwm_wr:dut|top_level_pwm:wr_top_level|segmentos_7:UNIDADES" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 40
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "MAX10_CLK1_50" is missing source, defaulting to GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/pwm_tb.v Line: 7
+Info (12128): Elaborating entity "counter" for hierarchy "top_level_pwm:wr_top_level|counter:counter_pwm" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 16
+Info (12128): Elaborating entity "cmp" for hierarchy "top_level_pwm:wr_top_level|cmp:cmp_pwm" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 22
+Info (12128): Elaborating entity "segmentos_7" for hierarchy "top_level_pwm:wr_top_level|segmentos_7:UNIDADES" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 40
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top_level_pwm:wr_top_level|Mod0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 31
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top_level_pwm:wr_top_level|Div0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top_level_pwm:wr_top_level|Mod1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top_level_pwm:wr_top_level|Div1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top_level_pwm:wr_top_level|Mod2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "top_level_pwm:wr_top_level|cmp:cmp_pwm|Mult0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v Line: 8
+Info (12130): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|lpm_divide:Mod0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 31
+Info (12133): Instantiated megafunction "top_level_pwm:wr_top_level|lpm_divide:Mod0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 31
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ckl.tdf
+    Info (12023): Found entity 1: lpm_divide_ckl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_ckl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/sign_div_unsign_bkh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0fe.tdf
+    Info (12023): Found entity 1: alt_u_div_0fe File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/alt_u_div_0fe.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/add_sub_t3c.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/add_sub_u3c.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|lpm_divide:Div0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 32
+Info (12133): Instantiated megafunction "top_level_pwm:wr_top_level|lpm_divide:Div0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 32
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9sl.tdf
+    Info (12023): Found entity 1: lpm_divide_9sl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_9sl.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|lpm_divide:Div1" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
+Info (12133): Instantiated megafunction "top_level_pwm:wr_top_level|lpm_divide:Div1" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_csl.tdf
+    Info (12023): Found entity 1: lpm_divide_csl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_csl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ekh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_ekh File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/sign_div_unsign_ekh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6fe.tdf
+    Info (12023): Found entity 1: alt_u_div_6fe File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/alt_u_div_6fe.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|lpm_divide:Mod2" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
+Info (12133): Instantiated megafunction "top_level_pwm:wr_top_level|lpm_divide:Mod2" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm.v Line: 33
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fkl.tdf
+    Info (12023): Found entity 1: lpm_divide_fkl File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/lpm_divide_fkl.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v Line: 8
+Info (12133): Instantiated megafunction "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0" with the following parameter: File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/cmp.v Line: 8
+    Info (12134): Parameter "LPM_WIDTHA" = "9"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "17"
+    Info (12134): Parameter "LPM_WIDTHR" = "17"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_crg.tdf
+    Info (12023): Found entity 1: add_sub_crg File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/add_sub_crg.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "top_level_pwm:wr_top_level|cmp:cmp_pwm|lpm_mult:Mult0" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 5
+    Warning (13410): Pin "ARDUINO_IO[1]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[2]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[3]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[4]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[5]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[6]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[7]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[8]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+    Warning (13410): Pin "ARDUINO_IO[9]" is stuck at GND File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "top_level_pwm:wr_top_level|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_7_result_int[0]~0" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/alt_u_div_0fe.tdf Line: 61
+    Info (17048): Logic cell "top_level_pwm:wr_top_level|lpm_divide:Mod1|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider|add_sub_6_result_int[0]~10" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/db/alt_u_div_0fe.tdf Line: 56
 Info (144001): Generated suppressed messages file C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/output_files/pwm_ex.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Tue Mar 19 01:13:49 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:09
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/top_level_pwm_wr.v Line: 3
+Info (21057): Implemented 343 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 31 output pins
+    Info (21061): Implemented 301 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Tue Mar 19 19:41:17 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:07
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
 The suppressed messages can be found in C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/PWM/pwm/output_files/pwm_ex.map.smsg.
 
 

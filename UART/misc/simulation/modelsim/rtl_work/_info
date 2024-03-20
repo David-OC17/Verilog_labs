@@ -1,0 +1,170 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/simulation/modelsim
+vDE10_Lite_wr
+Z1 !s110 1710905315
+!i10b 1
+!s100 =F_coSo8MiQUS6NnXW>h`1
+IRz?Zfdhlj1bYP^DkkFLJ`1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1710224200
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1710905315.000000
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/DE10_Lite_wr.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src
+Z7 tCvgOpt 0
+n@d@e10_@lite_wr
+vsegmentos_7
+R1
+!i10b 1
+!s100 SV^;GzI_bNFP6<n>kbaOa3
+Ig:RTDAj^>KKLLSKI1Bo;F0
+R2
+R0
+w1709321843
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1710905314.000000
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display/segmentos_7.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/7segment_display
+R7
+vTOP
+R1
+!i10b 1
+!s100 623LC3K95nWR8kPZC:63g2
+IRASY@S:GOL]eOcEYAGHgV0
+R2
+R0
+w1710221568
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/TOP.v|
+!i113 1
+R5
+R6
+R7
+n@t@o@p
+vUART_BaudRate_generator
+R1
+!i10b 1
+!s100 VU7Xk38QMk`=WViS^?`jJ2
+IM9X1]R<nY`=5eVKC1oN7h1
+R2
+R0
+Z8 w1710194843
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_baudrate_generator.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_baudrate_generator.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_baudrate_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_baudrate_generator.v|
+!i113 1
+R5
+R6
+R7
+n@u@a@r@t_@baud@rate_generator
+vUART_rs232_rx
+R1
+!i10b 1
+!s100 UgbRzK>UZHC=Z4I=K`BI:0
+I@6LnAi^LzEP[84^`aAZ1>0
+R2
+R0
+R8
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_rx.v|
+!i113 1
+R5
+R6
+R7
+n@u@a@r@t_rs232_rx
+vUART_rs232_tx
+R1
+!i10b 1
+!s100 ]Z9N]C8R?bYdHfQ2@1fVe1
+Ib[SC1^MBPjWPO@32i]Z362
+R2
+R0
+R8
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/src/UART_tx.v|
+!i113 1
+R5
+R6
+R7
+n@u@a@r@t_rs232_tx
+vUART_tb
+R1
+!i10b 1
+!s100 WNS9<NN[dO@hA^0_58OPJ1
+I>31lQCGl75Wg8[Z9Ol?800
+R2
+R0
+w1710905237
+8C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/../tb/UART_tb.v
+FC:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/../tb/UART_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/../tb/UART_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/../tb|C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/../tb/UART_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/daveo/OneDrive/Documentos/School/UNI_S.4/LOGIC/Verilog_labs/UART/misc/../tb
+R7
+n@u@a@r@t_tb
